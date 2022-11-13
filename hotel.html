@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel - Hotel Page</title>
+    <link rel="stylesheet" href="style/fonts.css">
+    <link rel="stylesheet" href="style/hamburgers.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+        <div class="navbarItem navbarHamburger">
+            <button class="hamburger hamburger--spring" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+        <div class="navbarItem">
+            <a href="/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="88.36" height="57.31" viewBox="0 0 88.36 57.31"
+                    class="logo">
+                    <path
+                        d="M27.82,22.45a5,5,0,0,0-5-5h-2a5,5,0,0,0-5,5V56.59a.72.72,0,0,0,.72.72h1.33a.72.72,0,0,0,.72-.72V42.05L25,35.59v21a.73.73,0,0,0,.73.72H27.1a.72.72,0,0,0,.72-.72Zm-9.28,15.7V22.45a2.27,2.27,0,0,1,2.27-2.26h2A2.26,2.26,0,0,1,25,22.45v9.24Zm40-20v1.33a.68.68,0,0,1-.62.72h-4V56.56a.74.74,0,0,1-.73.75H51.82a.74.74,0,0,1-.72-.75V20.19h-4a.68.68,0,0,1-.62-.72V18.14a.68.68,0,0,1,.62-.72H57.9A.68.68,0,0,1,58.52,18.14Zm-14.93,0V56.59a.73.73,0,0,1-.73.72H41.53a.72.72,0,0,1-.72-.72V28.05l-6.5-6.46v35a.72.72,0,0,1-.72.72H32.26a.72.72,0,0,1-.72-.72V18.14a.72.72,0,0,1,.72-.72h1.48a.68.68,0,0,1,.51.21h0l6.56,6.52v-6a.72.72,0,0,1,.72-.72h1.33A.73.73,0,0,1,43.59,18.14Zm44.77,0V56.56a.74.74,0,0,1-.72.75H86.31a.74.74,0,0,1-.73-.75V42.06l-8-7.92a4.59,4.59,0,0,1-1.06-1.92,10.44,10.44,0,0,1-.25-2.55V18.17a.73.73,0,0,1,.72-.75h1.33a.74.74,0,0,1,.73.75V30.68a2.8,2.8,0,0,0,.78,1.8l5.71,5.67v-20a.74.74,0,0,1,.73-.75h1.33A.74.74,0,0,1,88.36,18.17ZM39.29.44v.8a.4.4,0,0,1-.37.44H36.18V14.15a.45.45,0,0,1-.44.46h-.81a.45.45,0,0,1-.43-.46V1.68H31.75a.41.41,0,0,1-.37-.44V.44A.41.41,0,0,1,31.75,0h7.17A.41.41,0,0,1,39.29.44Zm9.51,0V14.15a.45.45,0,0,1-.44.46h-.8a.45.45,0,0,1-.44-.46V6.4l-4.55,4.5v3.25a.45.45,0,0,1-.44.46h-.8a.45.45,0,0,1-.44-.46V.46A.45.45,0,0,1,41.33,0h.8a.45.45,0,0,1,.44.46V8.53L47.12,4V.46A.45.45,0,0,1,47.56,0h.8A.44.44,0,0,1,48.8.46Zm3.49,6h4.22A.45.45,0,0,1,57,6.9v.81a.44.44,0,0,1-.45.43H52.29v4.78h5.33a.45.45,0,0,1,.45.44v.81a.45.45,0,0,1-.45.44H51a.45.45,0,0,1-.44-.46V.46A.45.45,0,0,1,51,0h6.58a.45.45,0,0,1,.45.44v.8a.44.44,0,0,1-.45.44H52.29Zm20.34,33-2.92-2.9,2.42-2.4a4.7,4.7,0,0,0,1.06-1.92,11,11,0,0,0,.25-2.55V22.41a2.49,2.49,0,0,0-.08-.61c-.76-2.89-6.9-4.19-9.15-4.35l-.49,0c-.44,0-.79,0-1.06,0a6.2,6.2,0,0,0-.71,0h0a.69.69,0,0,0-.56.72V56.56a.74.74,0,0,0,.72.75h1.33a.74.74,0,0,0,.72-.75V42.06l3.59-3.57,2.42,2.4A1.56,1.56,0,0,1,70.66,42V56.56a.74.74,0,0,0,.73.75h1.33a.74.74,0,0,0,.72-.75V41.69A3.18,3.18,0,0,0,72.63,39.44Zm-8.47-1.28V20.23s4.55.26,6.34,2.29a.57.57,0,0,1,.16.39v7.68a2.86,2.86,0,0,1-.78,1.89ZM9.27,25.42v-3A2.26,2.26,0,0,0,7,20.19H5a2.27,2.27,0,0,0-2.27,2.26V52.27A2.27,2.27,0,0,0,5,54.54H7a2.27,2.27,0,0,0,2.26-2.27V40.71L7.65,42.32a.74.74,0,0,1-1,0l-.94-.94a.74.74,0,0,1,0-1l.44-.43v0L9.4,36.68l.39-.39h0l.41-.41,0,0a1.05,1.05,0,0,1,1.16-.21,1.08,1.08,0,0,1,.67,1V52.27a5,5,0,0,1-5,5H5a5,5,0,0,1-5-5V22.45a5,5,0,0,1,5-5H7a5,5,0,0,1,5,5v3a.72.72,0,0,1-.72.72H10A.73.73,0,0,1,9.27,25.42Z">
+                    </path>
+                </svg>
+            </a>
+        </div>
+        <div class="navbarItem">
+            <ul>
+                <li><button class="navbarBookButton" id="bookRoom">Book a room</button></li>
+                <li><button class="navbarBookButton" id="bookTable">Book a table</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- CONTENT -->
+
+    <!-- HOTEL -->
+
+    <section class="hotelHeader">
+        <div class="container">
+            <div class="hotelHeaderContent">
+                <h1>Room to discover</h1>
+                <p>Every detail of The Gantry is designed to give you a relaxing and inspiring space to spend your
+                    downtime.
+                    From our rooms and suites, to our one-of-a-kind food and drink culture. The ideal springboard from
+                    which
+                    to explore this creative neighbourhood and city.</p>
+            </div>
+        </div>
+        <div class="hotelHeaderOverlay"></div>
+    </section>
+
+    <!-- BENEFITS -->
+
+    <section class="benefits">
+        <div class="container">
+            <div class="benefitsList">
+                <div>
+                    <p class="benefitTitle">Where taste awakens</p>
+                    <p class="benefitDesc">Indulge your senses in our restaurant, lounge and bars</p>
+                </div>
+                <div>
+                    <p class="benefitTitle">Glorious mornings</p>
+                    <p class="benefitDesc">Start the day with an exceptional breakfast, freshly prepared</p>
+                </div>
+                <div>
+                    <p class="benefitTitle">Fitness & wellbeing</p>
+                    <p class="benefitDesc">Invest in body and mind at our in-house gym</p>
+                </div>
+                <div>
+                    <p class="benefitTitle">Always connected</p>
+                    <p class="benefitDesc">Fast, free Wi-Fi and an in-room tablet</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROOMS -->
+
+    <section class="hotelRooms">
+        <div class="container">
+            <h1>Sleep well</h1>
+            <p>Relax, recharge, refresh. All our rooms and suites are designed to give you your best night’s sleep. From
+                the most luxurious mattress to sound insulation. Each room comes with its own tablet for exploring local
+                info and booking what you need – from laundry to taxis, to room service from our full restaurant and bar
+                menus.</p>
+
+            <div class="hotelRoomsList">
+                <div class="roomsItem">
+                    <a href="#">
+                        <img src="images/homepage/gantry-1b-720x504.jpg" alt="Photo">
+                        <div class="roomsItemInfo">
+                            <div class="roomsItemHead">
+                                <p>King Gantry Room</p>
+                                <a href="#">
+                                    <button>
+                                        <svg class="roomsItemHeaderArrow" viewBox="0 0 15 10"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.35.65L14.71 5l-4.36 4.35-.7-.7 3.14-3.15H0v-1h12.8L9.64 1.35l.7-.7z"
+                                                fill-rule="nonzero"></path>
+                                        </svg>
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="roomsItemParams">
+                                <div>
+                                    <p class="roomsParamTitle">SLEEPS</p>
+                                    <p class="roomsParamDesc">Up to 2</p>
+                                </div>
+                                <div>
+                                    <p class="roomsParamTitle">BED SIZE</p>
+                                    <p class="roomsParamDesc">King</p>
+                                </div>
+                            </div>
+                            <div class="roomsItemButton">
+                                <a href="#"><button>Check Availability</button></a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="roomsItem">
+                    <a href="#">
+                        <img src="images/homepage/deluxe-1b-720x504.jpg" alt="Photo">
+                        <div class="roomsItemInfo">
+                            <div class="roomsItemHead">
+                                <p>King Gantry Room</p>
+                                <a href="#">
+                                    <button>
+                                        <svg class="roomsItemHeaderArrow" viewBox="0 0 15 10"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.35.65L14.71 5l-4.36 4.35-.7-.7 3.14-3.15H0v-1h12.8L9.64 1.35l.7-.7z"
+                                                fill-rule="nonzero"></path>
+                                        </svg>
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="roomsItemParams">
+                                <div>
+                                    <p class="roomsParamTitle">SLEEPS</p>
+                                    <p class="roomsParamDesc">Up to 2</p>
+                                </div>
+                                <div>
+                                    <p class="roomsParamTitle">BED SIZE</p>
+                                    <p class="roomsParamDesc">King</p>
+                                </div>
+                            </div>
+                            <div class="roomsItemButton">
+                                <a href="#"><button>Check Availability</button></a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="roomsItem">
+                    <a href="#">
+                        <img src="images/homepage/GantryDeluxeSuite_FeaturedImage-720x504.jpg" alt="Photo">
+                        <div class="roomsItemInfo">
+                            <div class="roomsItemHead">
+                                <p>King Gantry Room</p>
+                                <a href="#">
+                                    <button>
+                                        <svg class="roomsItemHeaderArrow" viewBox="0 0 15 10"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.35.65L14.71 5l-4.36 4.35-.7-.7 3.14-3.15H0v-1h12.8L9.64 1.35l.7-.7z"
+                                                fill-rule="nonzero"></path>
+                                        </svg>
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="roomsItemParams">
+                                <div>
+                                    <p class="roomsParamTitle">SLEEPS</p>
+                                    <p class="roomsParamDesc">Up to 2</p>
+                                </div>
+                                <div>
+                                    <p class="roomsParamTitle">BED SIZE</p>
+                                    <p class="roomsParamDesc">King</p>
+                                </div>
+                            </div>
+                            <div class="roomsItemButton">
+                                <a href="#"><button>Check Availability</button></a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="roomsPreviewAll">
+                <a href="#">View all rooms <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                        class="grid-icon">
+                        <g fill="#eee0d0">
+                            <path data-name="Rectangle 244" d="M0 0h4v4H0z"></path>
+                            <path data-name="Rectangle 247" d="M0 6h4v4H0z"></path>
+                            <path data-name="Rectangle 252" d="M0 12h4v4H0z"></path>
+                            <path data-name="Rectangle 245" d="M6 0h4v4H6z"></path>
+                            <path data-name="Rectangle 249" d="M12 0h4v4h-4z"></path>
+                            <path data-v-5f6faa58="" data-name="Rectangle 246" d="M6 6h4v4H6z"></path>
+                            <path data-v-5f6faa58="" data-name="Rectangle 251" d="M6 12h4v4H6z"></path>
+                            <path data-name="Rectangle 248" d="M12 6h4v4h-4z"></path>
+                            <path data-name="Rectangle 250" d="M12 12h4v4h-4z"></path>
+                        </g>
+                    </svg></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOTEL BODY -->
+
+    <section class="hotelBody">
+        <div class="container">
+            <div class="hotelBodyHeader">
+                <h1>More than a place to rest your head</h1>
+                <p>While each of our 291 rooms has been elegantly designed to cater for all your creature comforts, The
+                    Gantry is so much more than just a place to rest and recuperate. What makes it an extraordinary stay
+                    is that you can also immerse yourself in a wide assortment of outstanding food, drink and
+                    entertainment as you soak in the vibrancy of this very special neighbourhood.</p>
+            </div>
+
+            <div class="hotelBodyVideo">
+                <video controls class="headerVideoWrapper">
+                    <source src="images/Gantry_BrandMovie_v11.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="hotelBodyBlock">
+                <img src="images/hotel/food-and-drink-1-1110x1050.jpg" alt="Image">
+                <div>
+                    <p class="hotelBodyBlockTitle">Discover Flavour</p>
+                    <p class="hotelBodyBlockDesc">No matter where you order meals and snacks in The Gantry, your
+                        tastebuds will be in for a real treat. This is a result of our expert team of grocers and chefs
+                        working closely together using freshly and responsibly sourced ingredients to prepare their
+                        culinary creations. It’s a philosophy that results in our guests and visitors enjoying excellent
+                        products throughout The Gantry, from the street-level cafés and bars, to room service, to the
+                        rooftop restaurant and terrace on the 18th floor.</p>
+                    <a href="#" class="mainButton">Learn More</a>
+                </div>
+            </div>
+
+            <div class="hotelBodyBlock hotelBodyBlockReverse">
+                <img src="images/homepage/GantryDeluxeSuite_FeaturedImage-720x504.jpg" alt="Image">
+                <div>
+                    <p class="hotelBodyBlockTitle">A community alive</p>
+                    <p class="hotelBodyBlockDesc">Where kerb-side creativity collides with world-class cultural
+                        institutions. Explore a food and drink scene that’s forever evolving – from fine dining to
+                        imaginative street food. Browse your way through one-off boutiques and top international brands.
+                        Or let yourself be inspired by the street art, galleries, film and music.</p>
+                    <a href="#" class="mainButton">Learn More</a>
+                </div>
+            </div>
+
+            <div class="hotelBodyBlock">
+                <img src="images/hotel/our-story-1-1110x1050.jpg" alt="Image">
+                <div>
+                    <p class="hotelBodyBlockTitle">A collaboration of the like-minded</p>
+                    <p class="hotelBodyBlockDesc">Our unique home in Stratford is where creative and talented minds come
+                        together to collaborate, explore and discover. This culture of collaboration doesn’t just run in
+                        our veins, but also in everything we do from food to cocktails to art shows to live
+                        entertainment. Whether you’re staying as a guest in one of our 291 stylish rooms, or if you’ve
+                        just joined us for a sundowner on the rooftop terrace, you’ll discover something to inspire you
+                        on each of The Gantry’s 18 floors.</p>
+                    <a href="#" class="mainButton">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOTEL CONTACTS -->
+
+    <section class="hotelContacts">
+        <div class="container">
+            <h1>Close to it all</h1>
+            <p>With Stratford International station on our doorstep, it’s easy to get in, out or around. Fast tube and
+                train connections put the best of the city within touching distance, while nearby London City Airport
+                offers international flights.</p>
+            <div class="hotelContactsList">
+                <div>
+                    <h2>FIND US</h2>
+                    <p class="hotelContactAdress">The Gantry, <br>
+                        40 Celebration Avenue, <br>
+                        Stratford, London, E20 1DB</p>
+                </div>
+                <div>
+                    <h2>IDEALLY SITUATED</h2>
+                   <p><svg width="12" height="8" xmlns="http://www.w3.org/2000/svg" data-v-49b3be7e="" data-v-994e4742=""><path d="M8.9 3H12V1.7H9L5.1 0h-3l4 1.7H0V3h6.3L2.9 4.4H0v1.2h3l3.8 1.8h3l-4-1.7H12V4.4H5.7L9 3" fill="#D8232A" fill-rule="evenodd" data-v-49b3be7e=""></path></svg> 7 minutes from St. Pancras International (via Javelin Train)</p>
+                   <p><svg width="10" height="10" xmlns="http://www.w3.org/2000/svg" data-v-e886b30c="" data-v-994e4742=""><path d="M9 .2c.5-.6 1.4.3.8.9L7.3 3.6 8.7 9l-1 .9-2.2-4.6-1.9 1.9.2 1.4-.7.7-.9-1.6L.6 7l.7-.8 1.4.2 1.9-1.8L0 2.3l1-1 5.4 1.4L9 .2z" fill="#002339" fill-rule="nonzero" data-v-e886b30c=""></path></svg> 20 minutes from London City Airport (taxi or direct DLR)</p>
+                   <p><svg width="12" height="10" xmlns="http://www.w3.org/2000/svg" data-v-4c2b9315="" data-v-994e4742=""><g fill="none" fill-rule="evenodd" data-v-4c2b9315=""><circle stroke="#D8232A" stroke-width="1.5" cx="6" cy="5" r="4.3" data-v-4c2b9315=""></circle><path fill="#363C92" d="M0 4h12v2H0z" data-v-4c2b9315=""></path></g></svg> 30 minutes to Oxford Street (via Tube)</p>
+                   <p><svg width="7" height="10" xmlns="http://www.w3.org/2000/svg" data-v-e14e72be="" data-v-994e4742=""><g fill="none" fill-rule="evenodd" data-v-e14e72be=""><path fill="#F5F4F2" d="M-6-6H7v18H-6z" data-v-e14e72be=""></path><path d="M3 0H.2a.2.2 0 00-.2.2v9a.2.2 0 00.2.2h1.4a.2.2 0 00.2-.2v-3H3c2.2 0 3.4-1.4 3.4-3.1C6.4 1.3 5.2 0 3 0zm0 4.5H1.7V1.6H3c.9 0 1.7.4 1.7 1.4 0 1.1-.8 1.5-1.7 1.5z" fill="#002339" fill-rule="nonzero" data-v-e14e72be=""></path></g></svg> 2 minutes to secure parking</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footerTop">
+                <ul class="footerTopLinks">
+                    <li><a href="#">Our story</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+                <div class="footerTopStay">
+                    <p>Stay</p>
+                    <ul>
+                        <li>
+                            <a href="#">Rooms & suites</a>
+                        </li>
+                        <li>
+                            <a href="#">Book bow</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footerTopShop">
+                    <p>Eat, Drink & Shop</p>
+                    <ul>
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">Union Social, Lounge Bar and Terrace</a></li>
+                        <li><a href="#">Coupe</a></li>
+                        <li><a href="#">Hermanos Colombian Coffee Roasters</a></li>
+                    </ul>
+                </div>
+                <div class="footerTopAdress">
+                    <p>The Gantry,</p>
+                    <p>40 Celebration Avenue,</p>
+                    <p>Stratford, London, E20 1DB</p>
+                </div>
+                <div class="footerTopContact">
+                    <p>+44 (0) 204 549 7600</p>
+                    <a href="mailto:info@thegantrylondon.com">info@thegantrylondon.com</a>
+
+                    <div>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                class="inline-social__icon" data-v-357a3e08="" data-v-28bdbc01="" data-v-21bfc870="">
+                                <path
+                                    d="M18.917,0H1.083A1.1,1.1,0,0,0,0,1.083V18.917A1.1,1.1,0,0,0,1.083,20h9.583V12.25H8.083v-3h2.583V7a3.657,3.657,0,0,1,3.917-4c1.083,0,2.083.083,2.333.083v2.75H15.333c-1.25,0-1.5.583-1.5,1.5V9.25h3l-.417,3H13.833V20h5.083A1.1,1.1,0,0,0,20,18.917V1.083A1.1,1.1,0,0,0,18.917,0"
+                                    fill="#fff" data-v-357a3e08=""></path>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                class="inline-social__icon" data-v-5acda453="" data-v-28bdbc01="" data-v-21bfc870="">
+                                <path id="Path_37" data-name="Path 37"
+                                    d="M10,0C7.25,0,6.917,0,5.917.083A6.774,6.774,0,0,0,3.417.5a5.346,5.346,0,0,0-1.75,1.167A4.61,4.61,0,0,0,.5,3.417a6.774,6.774,0,0,0-.417,2.5C0,6.917,0,7.25,0,10s0,3.083.083,4.083a8.14,8.14,0,0,0,.5,2.417,3.835,3.835,0,0,0,1.083,1.833A4.61,4.61,0,0,0,3.417,19.5a8.14,8.14,0,0,0,2.417.5H10c2.75,0,3.083,0,4.083-.083a8.14,8.14,0,0,0,2.417-.5,4.056,4.056,0,0,0,1.75-1.167,4.61,4.61,0,0,0,1.167-1.75,8.14,8.14,0,0,0,.5-2.417C20,13.083,20,12.75,20,10s0-3.083-.083-4.083a8.14,8.14,0,0,0-.5-2.417,3.835,3.835,0,0,0-1.083-1.833A4.61,4.61,0,0,0,16.583.5,8.14,8.14,0,0,0,14.167,0Zm0,1.833c2.667,0,3,0,4.083.083a5.411,5.411,0,0,1,1.833.333A2.825,2.825,0,0,1,17.083,3a2.825,2.825,0,0,1,.75,1.167A4.162,4.162,0,0,1,18.167,6c.083,1.083.083,1.333.083,4s0,3-.083,4.083a9.054,9.054,0,0,1-.333,1.833,3.264,3.264,0,0,1-1.917,1.917,4.162,4.162,0,0,1-1.833.333C13,18.25,12.75,18.25,10,18.25c-2.667,0-3,0-4.083-.083a9.054,9.054,0,0,1-1.833-.333,2.825,2.825,0,0,1-1.167-.75,2.825,2.825,0,0,1-.75-1.167,4.162,4.162,0,0,1-.333-1.833c0-1.083-.083-1.333-.083-4s0-3,.083-4.083a4.324,4.324,0,0,1,.333-1.917,2.825,2.825,0,0,1,.75-1.167,2.825,2.825,0,0,1,1.167-.75,4.162,4.162,0,0,1,1.833-.333,30.26,30.26,0,0,1,4.083,0Zm0,3A5.167,5.167,0,1,0,15.167,10,5.193,5.193,0,0,0,10,4.833Zm0,8.5A3.333,3.333,0,1,1,13.333,10,3.343,3.343,0,0,1,10,13.333Zm6.5-8.667a1.167,1.167,0,0,1-2.333,0,1.167,1.167,0,0,1,2.333,0Z"
+                                    fill="#fff" data-v-5acda453=""></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footerBottom">
+                <div class="footerBottomLeft">
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Global Privacy Policy</a></li>
+                        <li><a href="#">Site Usage Agreement</a></li>
+                        <li><a href="#">Cookie Statement</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Personal Data Requests</a></li>
+                        <li><a href="#">Not Sell My Information</a></li>
+                        <li><a href="#">AdChoices</a></li>
+                    </ul>
+                </div>
+                <div class="footerBottomRight">
+                    <p>© 2022 The Gantry London. © 2022 Hilton.</p>
+                    <p>All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MENU -->
+
+    <div class="menuBlock">
+        <div class="container">
+            <div class="footerTop">
+                <ul class="footerTopLinks">
+                    <li><a href="#">Our story</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+                <div class="footerTopStay">
+                    <p>Stay</p>
+                    <ul>
+                        <li>
+                            <a href="#">Rooms & suites</a>
+                        </li>
+                        <li>
+                            <a href="#">Book bow</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footerTopShop">
+                    <p>Eat, Drink & Shop</p>
+                    <ul>
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">Union Social, Lounge Bar and Terrace</a></li>
+                        <li><a href="#">Coupe</a></li>
+                        <li><a href="#">Hermanos Colombian Coffee Roasters</a></li>
+                    </ul>
+                </div>
+                <div class="footerTopAdress">
+                    <p>The Gantry,</p>
+                    <p>40 Celebration Avenue,</p>
+                    <p>Stratford, London, E20 1DB</p>
+                </div>
+                <div class="footerTopContact">
+                    <p>+44 (0) 204 549 7600</p>
+                    <a href="mailto:info@thegantrylondon.com">info@thegantrylondon.com</a>
+
+                    <div>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                class="inline-social__icon" data-v-357a3e08="" data-v-28bdbc01="" data-v-21bfc870="">
+                                <path
+                                    d="M18.917,0H1.083A1.1,1.1,0,0,0,0,1.083V18.917A1.1,1.1,0,0,0,1.083,20h9.583V12.25H8.083v-3h2.583V7a3.657,3.657,0,0,1,3.917-4c1.083,0,2.083.083,2.333.083v2.75H15.333c-1.25,0-1.5.583-1.5,1.5V9.25h3l-.417,3H13.833V20h5.083A1.1,1.1,0,0,0,20,18.917V1.083A1.1,1.1,0,0,0,18.917,0"
+                                    fill="#fff" data-v-357a3e08=""></path>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                class="inline-social__icon" data-v-5acda453="" data-v-28bdbc01="" data-v-21bfc870="">
+                                <path id="Path_37" data-name="Path 37"
+                                    d="M10,0C7.25,0,6.917,0,5.917.083A6.774,6.774,0,0,0,3.417.5a5.346,5.346,0,0,0-1.75,1.167A4.61,4.61,0,0,0,.5,3.417a6.774,6.774,0,0,0-.417,2.5C0,6.917,0,7.25,0,10s0,3.083.083,4.083a8.14,8.14,0,0,0,.5,2.417,3.835,3.835,0,0,0,1.083,1.833A4.61,4.61,0,0,0,3.417,19.5a8.14,8.14,0,0,0,2.417.5H10c2.75,0,3.083,0,4.083-.083a8.14,8.14,0,0,0,2.417-.5,4.056,4.056,0,0,0,1.75-1.167,4.61,4.61,0,0,0,1.167-1.75,8.14,8.14,0,0,0,.5-2.417C20,13.083,20,12.75,20,10s0-3.083-.083-4.083a8.14,8.14,0,0,0-.5-2.417,3.835,3.835,0,0,0-1.083-1.833A4.61,4.61,0,0,0,16.583.5,8.14,8.14,0,0,0,14.167,0Zm0,1.833c2.667,0,3,0,4.083.083a5.411,5.411,0,0,1,1.833.333A2.825,2.825,0,0,1,17.083,3a2.825,2.825,0,0,1,.75,1.167A4.162,4.162,0,0,1,18.167,6c.083,1.083.083,1.333.083,4s0,3-.083,4.083a9.054,9.054,0,0,1-.333,1.833,3.264,3.264,0,0,1-1.917,1.917,4.162,4.162,0,0,1-1.833.333C13,18.25,12.75,18.25,10,18.25c-2.667,0-3,0-4.083-.083a9.054,9.054,0,0,1-1.833-.333,2.825,2.825,0,0,1-1.167-.75,2.825,2.825,0,0,1-.75-1.167,4.162,4.162,0,0,1-.333-1.833c0-1.083-.083-1.333-.083-4s0-3,.083-4.083a4.324,4.324,0,0,1,.333-1.917,2.825,2.825,0,0,1,.75-1.167,2.825,2.825,0,0,1,1.167-.75,4.162,4.162,0,0,1,1.833-.333,30.26,30.26,0,0,1,4.083,0Zm0,3A5.167,5.167,0,1,0,15.167,10,5.193,5.193,0,0,0,10,4.833Zm0,8.5A3.333,3.333,0,1,1,13.333,10,3.343,3.343,0,0,1,10,13.333Zm6.5-8.667a1.167,1.167,0,0,1-2.333,0,1.167,1.167,0,0,1,2.333,0Z"
+                                    fill="#fff" data-v-5acda453=""></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footerBottom">
+                <div class="footerBottomLeft">
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Global Privacy Policy</a></li>
+                        <li><a href="#">Site Usage Agreement</a></li>
+                        <li><a href="#">Cookie Statement</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Personal Data Requests</a></li>
+                        <li><a href="#">Not Sell My Information</a></li>
+                        <li><a href="#">AdChoices</a></li>
+                    </ul>
+                </div>
+                <div class="footerBottomRight">
+                    <p>© 2022 The Gantry London. © 2022 Hilton.</p>
+                    <p>All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

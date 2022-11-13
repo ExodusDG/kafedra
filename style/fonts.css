@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Frontage';
+    src:
+        url('fonts/Frontage-Regular.woff') format('woff'),
+        url('fonts/Frontage-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+    font-family: 'Greycliff';
+    src: url('fonts/GreycliffCF-Bold.eot');
+    src: local('Greycliff CF Bold'), local('GreycliffCF-Bold'),
+        url('fonts/GreycliffCF-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/GreycliffCF-Bold.woff2') format('woff2'),
+        url('fonts/GreycliffCF-Bold.woff') format('woff'),
+        url('fonts/GreycliffCF-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+    font-family: 'Greycliff';
+    src: url('GreycliffCF-Regular.eot');
+    src: local('Greycliff CF'), local('GreycliffCF-Regular'),
+        url('fonts/GreycliffCF-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/GreycliffCF-Regular.woff2') format('woff2'),
+        url('fonts/GreycliffCF-Regular.woff') format('woff'),
+        url('fonts/GreycliffCF-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
